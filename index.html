@@ -873,8 +873,14 @@
 
 </body>
 
-    <script defer>
+    <script>
 
+  //imgloading-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('img:not([loading])').forEach((img) => {
+      img.setAttribute('loading', 'lazy');
+    });
+  });
 
 
 
