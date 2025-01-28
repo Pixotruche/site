@@ -215,6 +215,7 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .left{
@@ -393,16 +394,14 @@
 margin-top: 20vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(auto-fill, minmax(300px, auto)); */
     flex-grow: 1;
-    grid-row-gap: 3%; 
-
 }
 .imagecontainer{
     position: relative;
     left: 50%;
     transform: translate(-50%);
     width: 83%;
+    margin-bottom: 8%;
 }
 #chapo{  display: none; }
 
@@ -466,7 +465,6 @@ margin-top: 20vh;
         margin-top: 0vh;
     width: 80vw;
     right: auto;
-    row-gap: 7%;
     }
     .imagecontainer{
         position: relative;
@@ -474,56 +472,23 @@ margin-top: 20vh;
         transform: translate(-50%);
         width: 100%;
     display: flex;
-    top: -14%;
+    margin-bottom: 20%;
+    margin-top: 10%;
     }
 
-    #chapo{ display: flex; height: 28vw; grid-column: span 2 / span 1;  aspect-ratio: 10 / 12; justify-content: center; top: 30%; }
+    #chapo{ display: flex; height: 28vw; grid-column: span 2 / span 1; justify-content: center; margin-bottom: 10%;}
     #imagechapo{   width: 100%;}
 
-    #abis{  grid-column: span 2 / span 2;  aspect-ratio: 10 / 12;}
-    #imageabis{   width: 90%; position: absolute; left: 50%; top: 8%;  transform: translate(-50%);  }
-    #legendabis{
-        position: absolute;
+    #abis,#a,#b,#c,#d{  grid-column: span 2 / span 2; aspect-ratio: auto;}
+    #imageabis,#imagea ,#imageb,#imagec,#imaged{   width: 90%; position: relative; left: 50%; transform: translate(-50%);  }
+    #legendabis,#legenda,#legendb,#legendc,#legendd{
         left: 50%;
         transform: translate(-50%);
-        bottom: -20%;
-    }
-
-    #a{  grid-column: span 2 / span 2;  aspect-ratio: 10 / 6.5;  }
-    #imagea{   width: 90%; position: absolute; left: 50%; top: 12%;  transform: translate(-50%);  }
-    #legenda{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: -33%;
-    }
-  
-
-#b{  grid-column: span 2 / span 2; aspect-ratio: 10 / 9;}
-    #imageb{   width: 87%; position: absolute; left: 50%; top: 12%;  transform: translate(-50%);  }
-    #legendb{
-        left: 50%;
-        transform: translate(-50%);
-        bottom: -15%;
+        bottom: -12%;
     }
    
 
-#c{  grid-column: span 2 / span 2; aspect-ratio: 10 / 7.5;}
-    #imagec{   width: 90%; position: absolute; left: 50%; top: 12%;  transform: translate(-50%);  }    
-    #legendc{
-        left: 50%;
-        transform: translate(-50%);
-        bottom: -25%;
-    }
-    
 
-#d{  grid-column: span 2 / span 2;  aspect-ratio: 10 / 6.5;}
-    #imaged{   width: 93%; position: absolute; left: 50%; top: 12%;  transform: translate(-50%);  }
-    #legendd{
-        left: 50%;
-        transform: translate(-50%);
-        bottom: -35%;
-    }
 
 
     #gap1{  height: 30vw; display: block; }

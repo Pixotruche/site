@@ -212,6 +212,7 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .left{
@@ -386,7 +387,6 @@
     margin-top: 17vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 0.11%;
     width: 80%;
     flex-grow: none;
 }

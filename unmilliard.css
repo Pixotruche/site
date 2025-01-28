@@ -213,6 +213,7 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .left{
@@ -393,7 +394,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-grow: 1;
-    grid-row-gap: 0%; 
     justify-content: center;
 }
 .imagecontainer{
