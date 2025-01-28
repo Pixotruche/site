@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mathieu &emsp;-§§§o:</title>
+
+    <meta name="robots" content="noindex, nofollow">    
+    <meta name="author" content="" />
+    <meta name="copyright" content="Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="ceinture.css">
+
+  
+    <!-- Javascript -->
+    <!-- <script  type="text/javascript" src="assets/scripts/parts/vars.js"></script> -->
+
+ 
+  </head>
+
+    <!-- _-_-_-_-_-_-_-_-_-_-_-_-COMMUN_-_-_-_-_-_-_-_-_-_-_-_- -->
+    <!-- _-_-_-_-_-_-_-_-_-_-_-_-COMMUN_-_-_-_-_-_-_-_-_-_-_-_- -->
+    <!-- _-_-_-_-_-_-_-_-_-_-_-_-COMMUN_-_-_-_-_-_-_-_-_-_-_-_- -->
+ 
+
+    <div id="followbox">
+      <!-- <div class="follow" id="followa"></div> -->
+      <div class="follow" id="followb">:</div>
+      <div class="follow" id="followc">o</div>
+      <div class="follow" id="followd">§</div>
+      <div class="follow" id="followe">§</div>
+      <div class="follow" id="followf">§</div>
+      <div class="follow" id="followg">~</div> 
+    </div>
+  
+  <div class="top">
+    <div class="boutontop"id="about">
+      <a href="projet1.html"><p></s>about</s></p></a>
+    </div>
+    <div class="boutontop" id="nom">
+      <a href="index.html"><p id="titre"><span id="initiale">M</span>athieu <span id="initiale">C</span>hampion</p></a>
+    </div>
+    <div class="boutontop"id="insta">
+      <a href="https://www.instagram.com/empochait_humain/" target="_blank"><p>insta</p></a>
+      <p class="pseudo">@empochait_humain</p>
+    </div>
+  </div>
+  
+  <div class="bot botleft">
+    <div class="boutonbot"id="contact">
+      <a class="contacta" href=""><p>book.pdf</p></a>
+    </div>
+  </div>
+  
+  <div class="bot botright">
+    <div class="boutonbot"id="logo">
+      <a class="logoa" id="logoa" > <p>:o §§§ ~</p></a>
+    </div>
+  </div>
+  
+
+
+  
+<!-- _-_-_-_-_-_-_-_-_-_-_-_-DIFFERENT_-_-_-_-_-_-_-_-_-_-_-_- -->
+<!-- _-_-_-_-_-_-_-_-_-_-_-_-DIFFERENT_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+
+
+<div class="leprojet" id="leprojet">
+  
+  <div class="left">
+    <div id="textcontainer">
+      <p class="text">
+        <span class="titreprojet">Avant l'Aube</span> <br>
+
+        <span class="soustitreprojet">Un récit incarné de la création matérielle</span> <br><br>
+
+        Voici des objets qui chuchotent l’histoire de leur genèse, qui montrent tantôt timidement tantôt franchement, le geste façonnant, fascinant. 
+     
+
+        <span id="hidden-text" style="display: none;">
+          <br><br>
+          Notre manière d’interagir avec le monde est de plus en plus distante. Nous manipulons notre environnement plus que nous l’habitons, à travers des systèmes complexes, insaisissables. Le fossé creusé entre production et consommation abîme notre rapport aux choses. Soignons-le en observant la technique qui a plus à raconter que sa seule efficacité.
+        </span>
+
+        <a href="#" id="toggle-text" onclick="toggleText(event)">...more</a>
+
+        
+
+        <br><br><br>
+        <span class="interligne">  <span class="debut">Ceinture</span> : bronze, cuire<br><br>  </span>
+        <span class="debut">Table basse</span> : acier forgé, chêne marquété <br><br>
+        La technique du repoussage sur cuir me permet ici de venir détailler sur la lanière les étapes de fabrication de la boucle en bronze.
+        La technique de la fonte au sable y est illustrée, de l'alliage du cuivre et de l'étain au brossage de la boucle en passant par la fonte et la soudure.
+      </p>
+
+    </div>  
+  </div>
+
+  <div class="right">
+  <div id="imagegrid">
+
+    <div class="imagecontainer" id="a"> <img class="image" id="imagea" src="image2/ceinture/1.jpg" alt=""> </div>
+    <div class="imagecontainer" id="b"> <img class="image" id="imageb" src="image2/ceinture/2.jpg" alt=""> </div>
+    <div class="imagecontainer" id="c"> <img class="image" id="imagec" src="image2/ceinture/3.jpg" alt=""> </div>
+    <div class="imagecontainer" id="d"> <img class="image" id="imaged" src="image2/ceinture/4.jpg" alt=""> </div>
+    <div class="imagecontainer" id="gap1">  </div>
+    <div class="imagecontainer" id="gap2">  </div>
+
+
+
+
+  </div> 
+</div>
+
+</div>
+
+<script>
+
+  // -_-_-_-_-_-_-_-_-_-_-_-_option text "plus"-_-_-_-_-_-_-_-_-_-_-_-_
+
+  function toggleText(event) {
+    event.preventDefault();
+    const hiddenText = document.getElementById('hidden-text');
+    const toggleLink = document.getElementById('toggle-text');
+    if (hiddenText.style.display === 'none') {
+      hiddenText.style.display = 'inline';
+      toggleLink.textContent = '<- reduce';
+    } else {
+      hiddenText.style.display = 'none';
+      toggleLink.textContent = '...more';
+    }
+  }
+  // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+        
+document.getElementById('logoa').addEventListener('click', function() {
+            document.getElementById('followbox').classList.toggle('hover');
+        });
+        document.getElementById('logoa').addEventListener('click', function() {
+            document.getElementById('logoa').classList.toggle('hover');
+        });
+
+        
+
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+    // const aSquare = document.getElementById('followa');
+    const bSquare = document.getElementById('followb');
+    const cSquare = document.getElementById('followc');
+    const dSquare = document.getElementById('followd');
+    const eSquare = document.getElementById('followe');
+    const fSquare = document.getElementById('followf');
+    const gSquare = document.getElementById('followg'); // Nouveau bloc
+
+    document.addEventListener('mousemove', (event) => {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+
+        // Calculate angle between each square and the mouse
+        // const angleA = Math.atan2(mouseY - aSquare.offsetTop, mouseX - aSquare.offsetLeft);
+        const angleB = Math.atan2(mouseY - bSquare.offsetTop, mouseX - bSquare.offsetLeft);
+        const angleC = Math.atan2(mouseY - cSquare.offsetTop, mouseX - cSquare.offsetLeft);
+        const angleD = Math.atan2(mouseY - dSquare.offsetTop, mouseX - dSquare.offsetLeft);
+        const angleE = Math.atan2(mouseY - eSquare.offsetTop, mouseX - eSquare.offsetLeft);
+        const angleF = Math.atan2(mouseY - fSquare.offsetTop, mouseX - fSquare.offsetLeft);
+        const angleG = Math.atan2(mouseY - gSquare.offsetTop, mouseX - gSquare.offsetLeft); // Nouvel angle
+
+        // Rotate squares to face the mouse
+        // aSquare.style.transform = `translate(-50%, -50%) rotate(${angleA}rad)`;
+        bSquare.style.transform = `translate(-50%, -50%) rotate(${angleB}rad)`;
+        cSquare.style.transform = `translate(-50%, -50%) rotate(${angleC}rad)`;
+        dSquare.style.transform = `translate(-50%, -50%) rotate(${angleD}rad)`;
+        eSquare.style.transform = `translate(-50%, -50%) rotate(${angleE}rad)`;
+        fSquare.style.transform = `translate(-50%, -50%) rotate(${angleF}rad)`;
+        gSquare.style.transform = `translate(-50%, -50%) rotate(${angleG}rad)`; // Nouvelle transformation
+        
+        // Position squares at the mouse position with different offsets
+        // aSquare.style.left = `${mouseX}px`;
+        // aSquare.style.top = `${mouseY}px`;
+        
+        const bOffsetX = Math.cos(angleB) * 15; // Ajuster l'offset pour un espacement de 7px
+        const bOffsetY = Math.sin(angleB) * 15; // Ajuster l'offset pour un espacement de 7px
+        bSquare.style.left = `${mouseX - bOffsetX}px`;
+        bSquare.style.top = `${mouseY - bOffsetY}px`;
+
+        const cOffsetX = Math.cos(angleC) * 25; // Ajuster l'offset pour un espacement de 7px
+        const cOffsetY = Math.sin(angleC) * 25; // Ajuster l'offset pour un espacement de 7px
+        cSquare.style.left = `${mouseX - cOffsetX}px`;
+        cSquare.style.top = `${mouseY - cOffsetY}px`;
+
+        const dOffsetX = Math.cos(angleD) * 35; // Ajuster l'offset pour un espacement de 7px
+        const dOffsetY = Math.sin(angleD) * 35; // Ajuster l'offset pour un espacement de 7px
+        dSquare.style.left = `${mouseX - dOffsetX}px`;
+        dSquare.style.top = `${mouseY - dOffsetY}px`;
+
+        const eOffsetX = Math.cos(angleE) * 45; // Ajuster l'offset pour un espacement de 7px
+        const eOffsetY = Math.sin(angleE) * 45; // Ajuster l'offset pour un espacement de 7px
+        eSquare.style.left = `${mouseX - eOffsetX}px`;
+        eSquare.style.top = `${mouseY - eOffsetY}px`;
+
+        const fOffsetX = Math.cos(angleF) * 55; // Ajuster l'offset pour un espacement de 7px
+        const fOffsetY = Math.sin(angleF) * 55; // Ajuster l'offset pour un espacement de 7px
+        fSquare.style.left = `${mouseX - fOffsetX}px`;
+        fSquare.style.top = `${mouseY - fOffsetY}px`;
+
+        const gOffsetX = Math.cos(angleG) * 65; // Ajuster l'offset pour un espacement de 7px
+        const gOffsetY = Math.sin(angleG) * 65; // Ajuster l'offset pour un espacement de 7px
+        gSquare.style.left = `${mouseX - gOffsetX}px`;
+        gSquare.style.top = `${mouseY - gOffsetY}px`;
+    });
+});
+
+</script>
+
+
+</html>
+
+
