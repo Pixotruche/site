@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="aieaieaie.css">
+    <link rel="stylesheet" type="text/css" href="table.css">
 
   
     <!-- Javascript -->
@@ -40,10 +40,10 @@
   
   <div class="top">
     <div class="boutontop"id="about">
-      <a href="projet1.html"><p></s>infos</s></p></a>
+      <a href="projet1.html"><p></s>about</s></p></a>
     </div>
     <div class="boutontop" id="nom">
-      <a href="index.html"><p id="titre"><span id="initiale">M</span>athieu <span id="initiale">C</span>hampion</p></a>
+      <a href="eng_index.html"><p id="titre"><span id="initiale">M</span>athieu <span id="initiale">C</span>hampion</p></a>
     </div>
     <div class="boutontop"id="insta">
       <a href="https://www.instagram.com/empochait_humain/" target="_blank"><p>insta</p></a>
@@ -53,7 +53,7 @@
   
   <div class="bot botleft">
     <div class="boutonbot"id="contact">
-      <a class="contacta" href="eng_aieaieaie.html"><p>English</p></a>
+      <a class="contacta" href="table.html"><p>French</p></a>
     </div>
   </div>
   
@@ -62,7 +62,6 @@
       <a class="logoa" id="logoa" > <p>:o §§§ ~</p></a>
     </div>
   </div>
-  
 
 
   
@@ -76,18 +75,25 @@
   <div class="left">
     <div id="textcontainer">
       <p class="text">
+        <span class="titreprojet">Avant l'Aube</span> <br>
 
-        <span class="titreprojet">Aïe Aïe Aïe</span> <br><br>
+        <span class="soustitreprojet">Un récit incarné de la création matérielle</span> <br><br>
 
-        <span class="interligne">  <span class="debut">Collier</span> : aluminium, verre et argent 925<br><br>  </span>
-        <span class="debut">Foulards</span> : soie artificielle <br><br>
+        Voici des objets qui chuchotent l’histoire de leur genèse, qui montrent tantôt timidement tantôt franchement, le geste façonnant, fascinant. 
+     
 
-        Les programmes d'intelligence artificielle utilisent des données humaines pour générer des modèles. Ils reproduisent de manière particulièrement flagrante nos mécanismes de penser, permis eux : les stéréotypes de genre. Lorsqu’on compare les résultats de simples prompt comme “woman”/“man”, “policier”/“policiere” ou “woman chest”/“man chest” les différences sont facile à interpréter. 
-        <br><br>
-        Ces parures et foulards montrent les résultats de ces recherches, elle leur donne corps dans le "monde réel”, là où les causes et conséquences de ces stéréotypes ont lieu.
-       
-        </p> 
-          
+        <span id="hidden-text" style="display: none;">
+          <br><br>
+          Notre manière d’interagir avec le monde est de plus en plus distante. Nous manipulons notre environnement plus que nous l’habitons, à travers des systèmes complexes, insaisissables. Le fossé creusé entre production et consommation abîme notre rapport aux choses. Soignons-le en observant la technique qui a plus à raconter que sa seule efficacité.
+        </span>
+
+        <a href="#" id="toggle-text" onclick="toggleText(event)">...more</a>
+
+        <br><br><br>
+        <span class="debut">Table basse</span> : acier forgé, chêne marquété <br><br>
+        La technique du repoussage sur cuir me permet ici de venir détailler sur la lanière les étapes de fabrication de la boucle en bronze.
+        La technique de la fonte au sable y est illustrée, de l'alliage du cuivre et de l'étain au brossage de la boucle en passant par la fonte et la soudure.
+      </p>
 
     </div>  
   </div>
@@ -95,24 +101,22 @@
   <div class="right">
   <div id="imagegrid">
 
-    <div class="imagecontainer" id="abis">
-       <!-- <p class="legend" id="legendabis"> images generated with an AI program from the word "woman" </p> -->
-       <img class="image" id="imageabis" src="image2/aieaieaie/1.png" alt=""> </div>
+    <div class="imagecontainer" id="a"> <img class="image" id="imagea" src="image2/table/2.jpg" alt=""> </div>
+    <div class="imagecontainer" id="b"> <img class="image" id="imageb" src="image2/table/1.jpg" alt=""> </div>
+    <div class="imagecontainer" id="g"> <img class="image" id="imageg" src="image2/table/20.jpg" alt=""> </div>
+    <div class="imagecontainer" id="g"> <img class="image" id="imageg" src="image2/table/21.jpg" alt=""> </div>
+    <div class="imagecontainer" id="g"> <img class="image" id="imageg" src="image2/table/23.jpg" alt=""> </div>
+    <div class="imagecontainer" id="g"> <img class="image" id="imageg" src="image2/table/22.jpg" alt=""> </div>
+    <div class="imagecontainer" id="c"> <img class="image" id="imagec" src="image2/table/3.jpg" alt=""> </div>
+    <!-- <div class="imagecontainer" id="d"> <img class="image" id="imaged" src="image2/table/4.jpg" alt=""> </div> -->
+    <!-- <div class="imagecontainer" id="e"> <img class="image" id="imagee" src="image2/table/6.jpg" alt=""> </div> -->
+    <!-- <div class="imagecontainer" id="f"> <img class="image" id="imagef" src="image2/table/5.jpg" alt=""> </div> -->
+    <div class="imagecontainer" id="h"> <img class="image" id="imageh" src="image2/table/19.jpg" alt=""> </div>
+    <div class="imagecontainer" id="gap2"> </div>
+    <div class="imagecontainer" id="gap"></div>
 
-    <div class="imagecontainer" id="a">  
-      <!-- <p class="legend" id="legenda">images generated with an AI program from the word "man" </p>  -->
-      <img class="image" id="imagea" src="image2/aieaieaie/2.png" alt=""> </div>
 
-    <div class="imagecontainer" id="b">  <p class="legend" id="legendb"> body and identity  ~  exhibition in Narva, Estonia, 2023 </p> <img class="image" id="imageb" src="image2/aieaieaie/3.jpg" alt=""> </div>
 
-    <div class="imagecontainer" id="c"> <img class="image" id="imagec" src="image2/aieaieaie/5.jpg" alt=""> </div>
-
-    <div class="imagecontainer" id="d"> <img class="image" id="imaged" src="image2/aieaieaie/4.jpg" alt=""> </div>
-
-    <div class="imagecontainer" id="d"> <img class="image" id="imaged" src="image2/aieaieaie/6.jpg" alt=""> </div>
-
-    <div class="imagecontainer" id="gap1">  </div>
-    <div class="imagecontainer" id="gap2">  </div>
 
   </div> 
 </div>
@@ -120,6 +124,24 @@
 </div>
 
 <script>
+
+// -_-_-_-_-_-_-_-_-_-_-_-_option text "plus"-_-_-_-_-_-_-_-_-_-_-_-_
+
+  function toggleText(event) {
+    event.preventDefault();
+    const hiddenText = document.getElementById('hidden-text');
+    const toggleLink = document.getElementById('toggle-text');
+    if (hiddenText.style.display === 'none') {
+      hiddenText.style.display = 'inline';
+      toggleLink.textContent = '<- reduce';
+    } else {
+      hiddenText.style.display = 'none';
+      toggleLink.textContent = '...more';
+    }
+  }
+  // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
 
         
 document.getElementById('logoa').addEventListener('click', function() {
