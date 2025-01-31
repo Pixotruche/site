@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mathieu &emsp;-§§§o:</title>
+    <title>-§§§o:</title>
 
     <meta name="robots" content="noindex, nofollow">    
     <meta name="author" content="" />
@@ -38,18 +38,34 @@
       <div class="follow" id="followg">~</div> 
     </div>
   
-  <div class="top">
-    <div class="boutontop"id="about">
-      <a href="projet1.html"><p></s>about</s></p></a>
+    <div class="top">
+      <div class="boutontop"id="about">
+       <p></s>about</s></p>
+      </div>
+      <div class="boutontop" id="nom">
+        <a href="eng_index.html"><p id="titre"><span id="initiale">M</span>athieu <span id="initiale">C</span>hampion</p></a>
+      </div>
+      <div class="boutontop"id="insta">
+        <a href="https://www.instagram.com/empochait_humain/" target="_blank"><p>insta</p></a>
+        <p class="pseudo">@empochait_humain</p>
+      </div>
     </div>
-    <div class="boutontop" id="nom">
-      <a href="eng_index.html"><p id="titre"><span id="initiale">M</span>athieu <span id="initiale">C</span>hampion</p></a>
+    
+    
+    <div id="infoModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+          <p>Graduated from Arts Décoratifs de Paris, I make furniture and wearable objects with a focus on metal and wood craft. Making processes recently became the center of my practice, inspiring the shapes I draw and the stories I tell. Currently, I am an artist-in-residence at EKA in Tallinn, further developing my skills in metalwork and jewelry.
+    
+      <br><br>
+      <span class="cancerallesca">Contact</span><br>
+    @empochait_humain<br>
+    mathieu.champion18@gmail.com<br>
+    +33 6 80 02 71 62<br><br>
+    <!-- 
+    <a href="">Cliquez pour télécharger mon portfolio.pdf</a></p> -->
+      </div>
     </div>
-    <div class="boutontop"id="insta">
-      <a href="https://www.instagram.com/empochait_humain/" target="_blank"><p>insta</p></a>
-      <p class="pseudo">@empochait_humain</p>
-    </div>
-  </div>
   
   <div class="bot botleft">
     <div class="boutonbot"id="contact">
@@ -192,6 +208,30 @@ document.getElementById('logoa').addEventListener('click', function() {
         gSquare.style.top = `${mouseY - gOffsetY}px`;
     });
 });
+
+        //POPUP-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+        // Récupération des éléments
+        const modal = document.getElementById("infoModal");
+        const btn = document.getElementById("about");
+        const closeBtn = document.querySelector(".close");
+
+        // Afficher la modale au clic
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+
+        // Fermer la modale au clic sur (x)
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Fermer la modale si on clique en dehors
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
 
 </script>
 
