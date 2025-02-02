@@ -802,13 +802,13 @@ font-family: "typo2";
     transition: 0.7s;
     overflow-x: scroll;
     overflow-y: hidden; /* Désactive le défilement vertical */
-    scrollbar-width: none; /* Pour Firefox */
+    /* scrollbar-width: none;  */
     -webkit-overflow-scrolling: touch; 
   }
 
-.bijouxcontainer::-webkit-scrollbar {
-    display: none;  /* Pour Chrome, Safari et Opera */
-  }
+/* .bijouxcontainer::-webkit-scrollbar {
+    display: none; 
+  } */
   
   .scrollbijoux {
     display: flex;
