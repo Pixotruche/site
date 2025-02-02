@@ -534,7 +534,7 @@ font-family: "typo2";
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.079);
+    background-color: rgba(0, 0, 0, 0.03);
   }
   .carousel-slide img {
     border:none;
