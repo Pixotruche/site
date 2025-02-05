@@ -154,6 +154,9 @@
                                         .close:hover{
                                             color:var(--text2-color) ;
                                         }
+                                        .un{
+                                            font-family: Georgia, 'Times New Roman', Times, serif;
+                                        }
 
                                     
         #insta{

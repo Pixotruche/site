@@ -11,7 +11,12 @@
     <meta name="copyright" content="Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International" />
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="preload" href="font/SourceSans3-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/EBGaramond12-Italic.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/EBGaramond08-Regular.otf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/Cancellaresca.otf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/EBGaramond12-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/EBGaramond08-Italic.otf" as="font" type="font/woff2" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -53,12 +58,13 @@
 <div id="infoModal" class="modal">
   <span class="close">&times;</span>
   <div class="modal-content">
-      <p>Graduated from Arts Décoratifs de Paris, I make furniture and wearable objects with a focus on metal and wood craft. Making processes recently became the center of my practice, inspiring the shapes I draw and the stories I tell. Currently, I am an artist-in-residence at EKA in Tallinn, further developing my skills in metalwork and jewelry.
-
+      <p>Mathieu Champion. Graduate from Arts Décoratifs de Paris. Designer of furnitures and wearable objects.<br>
+        Manufacturing processes and shaping gestures become the focus of my practice, inspiring the forms I design and the stories I tell.
+        Currently in artistic residency at EKA in Tallinn, I'm continuing my apprenticeship in the arts of metal and jewelry.
   <br><br>
   <span class="cancerallesca">Contact</span><br>
 @empochait_humain<br>
-mathieu.champion18@gmail.com<br>
+mathieu.champion<span class="un">1</span>8@gmail.com<br>
 +33 6 80 02 71 62<br><br>
 <!-- 
 <a href="">Cliquez pour télécharger mon portfolio.pdf</a></p> -->
@@ -187,7 +193,7 @@ mathieu.champion18@gmail.com<br>
                     <div class="carousel-slide"><img src="video/20/20-1.jpg"></div>
                     <div class="carousel-slide video-container"> 
                       <div class="loader"></div>
-                      <video class="video" autoplay muted loop playsinline webkit-playsinline>  
+                      <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none"> 
                         <source src="video/20/20.mp4" type="video/mp4"> 
                         <p>Your browser does not support the video tag.</p>  
                       </video>   
@@ -218,7 +224,7 @@ mathieu.champion18@gmail.com<br>
                 <div class="carousel" id="carousel-14">
                   <div class="carousel-track">
                     <div class="carousel-slide"><img src="video/00/00-2.jpg"></div>
-                    <div class="carousel-slide video-container">  <div class="loader"></div> <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/00/00.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>   </div>
+                    <div class="carousel-slide video-container">  <div class="loader"></div> <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">   <source src="video/00/00.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>   </div>
                     <div class="carousel-slide"><img src="video/00/00-1.jpg"></div>
                   </div>
                 </div>
@@ -247,7 +253,7 @@ mathieu.champion18@gmail.com<br>
                      <div class="carousel-slide"><img src="video/10/10-1.jpg"></div>
                      <div class="carousel-slide video-container"> 
                       <div class="loader"></div>
-                       <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/10/10.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+                       <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/10/10.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
                     </div>
                
                   </div>
@@ -276,7 +282,7 @@ mathieu.champion18@gmail.com<br>
                 <div class="carousel" id="carousel-4">
                   <div class="carousel-track">
                     <div class="carousel-slide"><img src="video/04/04-1.jpg" ></div>
-                    <div class="carousel-slide video-container"> <div class="loader"></div><video class="video" autoplay muted loop playsinline webkit-playsinline><source src="video/04/04.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p></video> </div>
+                    <div class="carousel-slide video-container"> <div class="loader"></div><video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none"><source src="video/04/04.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p></video> </div>
                     <div class="carousel-slide"><img src="video/04/04-2.jpg" ></div>
                   </div>
                 </div>
@@ -306,7 +312,7 @@ mathieu.champion18@gmail.com<br>
                    <div class="carousel-slide"><img src="video/11/11-1.jpg" ></div>
                    <div class="carousel-slide video-container"> 
                     <div class="loader"></div>
-                       <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/11/11.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+                       <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/11/11.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
                     </div>
                   </div>
                 </div>
@@ -337,7 +343,7 @@ mathieu.champion18@gmail.com<br>
                     <div class="carousel-slide"><img src="video/09/09-2.jpg" ></div>
                     <div class="carousel-slide video-container"> 
                       <div class="loader"></div>
-                      <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/09/09.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+                      <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/09/09.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
                     </div>
                     <div class="carousel-slide"><img src="video/09/09-1.jpg" ></div>
                   </div>
@@ -371,7 +377,7 @@ mathieu.champion18@gmail.com<br>
                   <div class="carousel-slide"><img src="video/05/05-1.jpg"></div>
                   <div class="carousel-slide video-container"> 
                     <div class="loader"></div>
-                                    <video class="video" autoplay muted loop playsinline webkit-playsinline>
+                                    <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">
                                       <source src="video/05/05.mp4" type="video/mp4">
                                       <p>Your browser does not support the video tag.</p>
                                   </video>
@@ -404,7 +410,7 @@ mathieu.champion18@gmail.com<br>
                     <div class="carousel-slide"><img src="video/13/13-1.jpg" ></div>
                     <div class="carousel-slide video-container"> 
                       <div class="loader"></div>
-                       <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/13/13.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+                       <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/13/13.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
                     </div>
 
 
@@ -437,7 +443,7 @@ mathieu.champion18@gmail.com<br>
                     <div class="carousel-slide"><img src="video/12/12.jpg" ></div>
                     <div class="carousel-slide video-container"> 
                       <div class="loader"></div>
-                       <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/12/12.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+                       <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/12/12.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
                     </div>
                   </div>
                 </div>
@@ -468,7 +474,7 @@ mathieu.champion18@gmail.com<br>
              <div class="carousel-slide"><img src="video/02/02-1.jpg"></div>
              <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-                               <video class="video" autoplay muted loop playsinline webkit-playsinline>
+                               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">
                                  <source src="video/02/02.mp4" type="video/mp4">
                                  <p>Your browser does not support the video tag.</p>
                              </video>
@@ -503,7 +509,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/17/17.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/17/17.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/17/17.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -530,7 +536,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/18/18.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/18/18.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/18/18.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -554,7 +560,7 @@ mathieu.champion18@gmail.com<br>
         <button class="carousel-arrow left" data-carousel-id="14">←</button>
         <div class="carousel" id="carousel-15">
             <div class="carousel-slide">
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/15/15.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/15/15.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
         </div>
         <button class="carousel-arrow right" data-carousel-id="14">→</button>
@@ -579,7 +585,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/16/16.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/16/16.mp4" type="video/mp4"> <p>votre navigateur ne supporte pas cette vidéo.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/16/16.mp4" type="video/mp4"> <p>votre navigateur ne supporte pas cette vidéo.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -607,7 +613,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/01/01.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/01/01.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/01/01.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -637,7 +643,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/07/07.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/07/07.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/07/07.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -668,7 +674,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/08/08.jpg" ></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-               <video class="video" autoplay muted loop playsinline webkit-playsinline>  <source src="video/08/08.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
+               <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  <source src="video/08/08.mp4" type="video/mp4"> <p>Your browser does not support the video tag.</p>  </video>                       
             </div>
           </div>
         </div>
@@ -704,7 +710,7 @@ mathieu.champion18@gmail.com<br>
             <div class="carousel-slide"><img src="video/03/03.jpg" alt="Slide 2"></div>
             <div class="carousel-slide video-container"> 
               <div class="loader"></div>
-                              <video class="video" autoplay muted loop playsinline webkit-playsinline>
+                              <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">
                                 <source src="video/03/03.mp4" type="video/mp4">
                                 <p>Your browser does not support the video tag.</p>
                             </video>
@@ -744,7 +750,7 @@ mathieu.champion18@gmail.com<br>
           <div class="carousel-slide"><img src="video/06/06.jpg" alt="Slide 2"></div>
           <div class="carousel-slide video-container"> 
             <div class="loader"></div>
-                            <video class="video" autoplay muted loop playsinline webkit-playsinline>
+                            <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">
                               <source src="video/06/06.mp4" type="video/mp4">
                               <p>Your browser does not support the video tag.</p>
                           </video>

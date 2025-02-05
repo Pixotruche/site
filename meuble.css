@@ -35,7 +35,7 @@
 
 @font-face {
     font-family:"typo3";
-    src: url(font/Cancellaresca\ Script\ Std\ Regular.otf);
+    src: url(font/Cancellaresca.otf);
     font-style: normal;
     font-weight: 100;
 } 
@@ -157,6 +157,9 @@
                                         
                                         .close:hover{
                                             color:var(--text2-color) ;
+                                        }
+                                        .un{
+                                            font-family: Georgia, 'Times New Roman', Times, serif;
                                         }
 
                                     
