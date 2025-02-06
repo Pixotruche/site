@@ -183,8 +183,8 @@ mathieu.champion<span class="un">1</span>8@gmail.com<br>
               <div class="espacetop"></div>
 
               <div class="order2">
-              <a class="order2text" href="https://ig.me/m/empochait_humain" target="_blank">to order or for any question <br> please contact @empochait_humain</a>
-              <p class="order2text"><br>  you don't find ur size ? also contact me,<br> we might find a solution :-)</p>
+                <a class="order2text" href="https://ig.me/m/empochait_humain" target="_blank">pour commander ou pour tout autre question <br> contactez @empochait_humain<br></a>
+                <a class="order2text" href="https://ig.me/m/empochait_humain" target="_blank"><br>  vous ne trouvez pas votre taille ? contactez moi<br> nous pourrions trouver une solution :-)</a>
               </div>
               <div class="carousel-containder item hidden">
                 <button class="carousel-arrow left" data-carousel-id="19">←</button>
@@ -904,7 +904,7 @@ mathieu.champion<span class="un">1</span>8@gmail.com<br>
     </div>
 </div>
 
-<a class="order1" href="https://ig.me/m/empochait_humain" target="_blank">to order or for any question <br> please contact @empochait_humain</a>
+<a class="order1" href="https://ig.me/m/empochait_humain" target="_blank">pour commander ou pour tout autre question contactez @empochait_humain <br> vous ne trouvez pas votre taille? nous pourrions trouver une solution :-)</a>
 
 
 
@@ -1090,109 +1090,119 @@ mediaQuery.addEventListener('change', applyScrollEffect);
         //bouton-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
 
 
-            function projectsclick() {
+        function projectsclick() {
 
-                const projectscontainer = document.querySelector('.projectscontainer');
-                projectscontainer.classList.toggle('upprojects');
+const projectscontainer = document.querySelector('.projectscontainer');
+projectscontainer.classList.toggle('upprojects');
 
-                const projectsbleu = document.querySelector('.projects');
-                projectsbleu.classList.toggle('projectsbleu');
+const projectsbleu = document.querySelector('.projects');
+projectsbleu.classList.toggle('projectsbleu');
 
-                const uptop = document.querySelector('.top2');
-                uptop.classList.toggle('uptop');
+const uptop = document.querySelector('.top2');
+uptop.classList.toggle('uptop');
 
-                // cancel le click bijoux
+// cancel le click bijoux
 
-                const bijouxcontainer = document.querySelector('.bijouxcontainer');
-                bijouxcontainer.classList.remove('upbijoux');
+const bijouxcontainer = document.querySelector('.bijouxcontainer');
+bijouxcontainer.classList.remove('upbijoux');
 
-                const bijouxbleu = document.querySelector('.bijoux');
-                bijouxbleu.classList.remove('bijouxbleu');
+const bijouxbleu = document.querySelector('.bijoux');
+bijouxbleu.classList.remove('bijouxbleu');
 
-                const uptop2 = document.querySelector('.top2');
-                uptop2.classList.remove('uptop2');
+const uptop2 = document.querySelector('.top2');
+uptop2.classList.remove('uptop2');
 
-                // cancel le click shop
+// cancel le click shop
 
-                const shopcontainer = document.querySelector('.shopcontainer');
-                shopcontainer.classList.remove('upshop');
+const shopcontainer = document.querySelector('.shopcontainer');
+shopcontainer.classList.remove('upshop');
 
-                const shopbleu = document.querySelector('.shop');
-                shopbleu.classList.remove('shopbleu');
+const shopbleu = document.querySelector('.shop');
+shopbleu.classList.remove('shopbleu');
 
-                const uptop3 = document.querySelector('.top2');
-                uptop3.classList.remove('uptop3');
-                
-            }
+const uptop3 = document.querySelector('.top2');
+uptop3.classList.remove('uptop3');
 
-            function bijouxclick() {
+const order1appear = document.querySelector('.order1');
+order1appear.classList.remove('order1appear');
 
-                const bijouxcontainer = document.querySelector('.bijouxcontainer');
-                bijouxcontainer.classList.toggle('upbijoux');
+}
 
-                const bijouxbleu = document.querySelector('.bijoux');
-                bijouxbleu.classList.toggle('bijouxbleu');
+function bijouxclick() {
 
-                const uptop2 = document.querySelector('.top2');
-                uptop2.classList.toggle('uptop2');
+const bijouxcontainer = document.querySelector('.bijouxcontainer');
+bijouxcontainer.classList.toggle('upbijoux');
+
+const bijouxbleu = document.querySelector('.bijoux');
+bijouxbleu.classList.toggle('bijouxbleu');
+
+const uptop2 = document.querySelector('.top2');
+uptop2.classList.toggle('uptop2');
 
 
-                // cancel le click projects
+// cancel le click projects
 
-                const projectscontainer = document.querySelector('.projectscontainer');
-                projectscontainer.classList.remove('upprojects');
+const projectscontainer = document.querySelector('.projectscontainer');
+projectscontainer.classList.remove('upprojects');
 
-                const projectsbleu = document.querySelector('.projects');
-                projectsbleu.classList.remove('projectsbleu');
+const projectsbleu = document.querySelector('.projects');
+projectsbleu.classList.remove('projectsbleu');
 
-                const uptop = document.querySelector('.top2');
-                uptop.classList.remove('uptop');
+const uptop = document.querySelector('.top2');
+uptop.classList.remove('uptop');
 
-                //  cancel le click shop
+//  cancel le click shop
 
-                const shopcontainer = document.querySelector('.shopcontainer');
-                shopcontainer.classList.remove('upshop');
+const shopcontainer = document.querySelector('.shopcontainer');
+shopcontainer.classList.remove('upshop');
 
-                const shopbleu = document.querySelector('.shop');
-                shopbleu.classList.remove('shopbleu');
+const shopbleu = document.querySelector('.shop');
+shopbleu.classList.remove('shopbleu');
 
-                const uptop3 = document.querySelector('.top2');
-                uptop3.classList.remove('uptop3');
-            }
+const uptop3 = document.querySelector('.top2');
+uptop3.classList.remove('uptop3');
 
-            function shopclick() {
+const order1appear = document.querySelector('.order1');
+order1appear.classList.remove('order1appear');
+}
 
-                const shopcontainer = document.querySelector('.shopcontainer');
-                shopcontainer.classList.toggle('upshop');
+function shopclick() {
 
-                const shopbleu = document.querySelector('.shop');
-                shopbleu.classList.toggle('shopbleu');
+const shopcontainer = document.querySelector('.shopcontainer');
+shopcontainer.classList.toggle('upshop');
 
-                const uptop3 = document.querySelector('.top2');
-                uptop3.classList.toggle('uptop3');
+const shopbleu = document.querySelector('.shop');
+shopbleu.classList.toggle('shopbleu');
 
-                // cancel le click bijoux
+const uptop3 = document.querySelector('.top2');
+uptop3.classList.toggle('uptop3');
 
-                const bijouxcontainer = document.querySelector('.bijouxcontainer');
-                bijouxcontainer.classList.remove('upbijoux');
+const order1appear = document.querySelector('.order1');
+order1appear.classList.toggle('order1appear');
 
-                const bijouxbleu = document.querySelector('.bijoux');
-                bijouxbleu.classList.remove('bijouxbleu');
+// cancel le click bijoux
 
-                const uptop2 = document.querySelector('.top2');
-                uptop2.classList.remove('uptop2');
+const bijouxcontainer = document.querySelector('.bijouxcontainer');
+bijouxcontainer.classList.remove('upbijoux');
 
-                // cancel le click projects
+const bijouxbleu = document.querySelector('.bijoux');
+bijouxbleu.classList.remove('bijouxbleu');
 
-                const projectscontainer = document.querySelector('.projectscontainer');
-                projectscontainer.classList.remove('upprojects');
+const uptop2 = document.querySelector('.top2');
+uptop2.classList.remove('uptop2');
 
-                const projectsbleu = document.querySelector('.projects');
-                projectsbleu.classList.remove('projectsbleu');
+// cancel le click projects
 
-                const uptop = document.querySelector('.top2');
-                uptop.classList.remove('uptop');
-            }
+const projectscontainer = document.querySelector('.projectscontainer');
+projectscontainer.classList.remove('upprojects');
+
+const projectsbleu = document.querySelector('.projects');
+projectsbleu.classList.remove('projectsbleu');
+
+const uptop = document.querySelector('.top2');
+uptop.classList.remove('uptop');
+}
+
 
 
       //video auto-_-_-_-_-_-_-_-_-_-_-_-_-_- -->

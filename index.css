@@ -618,21 +618,24 @@ font-family: "typo2";
       }
 
     .order1 {
-        opacity: 0;
+        display: block;
         position: absolute;
-        bottom: 3vh;
+        bottom: -97vh;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 2.4vh;
+        font-size: 2.2vh;
         text-align: center;
-        max-width: 50%;  /* Pour éviter que le texte soit trop large */
-         word-wrap: break-word; /* Permet au texte de passer à la ligne si nécessaire */
-        color: var(--text2-color);
+        max-width: 90%;  
+         word-wrap: break-word; 
         font-family: "typo1";
         z-index: 11 ;
+        transition: bottom 0.7s;
     }
-    .shopcontainer:hover + .order1 {  opacity: 1;  }
-    .order1:hover {  opacity: 1;  }
+    .order1appear{bottom: 2.3vh;}
+
+    /* .shopcontainer:hover + .order1 {  opacity: 1;  } */
+    /* .order1:hover {  opacity: 1;  } */
+
     .order2{display: none;}
 
     
