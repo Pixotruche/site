@@ -1434,6 +1434,27 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+
+
+
+// apparition img quand charger
+
+document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("img");
+
+            images.forEach(img => {
+                img.addEventListener("load", function () {
+                    img.style.display = "block"; // Affiche l'image
+                    img.style.opacity = "1"; // Anime l'apparition
+                });
+
+                // Définir src après l'ajout de l'événement pour éviter un chargement trop rapide
+                img.src = img.getAttribute("src");
+            });
+        });
+
+
     </script>
 </html>
 
