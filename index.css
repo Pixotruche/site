@@ -899,3 +899,10 @@ font-family: "typo2";
       }
 
 
+
+
+      img {
+        display: none; /* Cache l'image par défaut */
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
