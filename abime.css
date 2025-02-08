@@ -452,7 +452,7 @@
 
 #imagegrid{
     position: relative;
-    margin-top: 20vh;
+    margin-top: 17vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 0.11%;
@@ -478,7 +478,7 @@
 #couvcontainer{
     position: absolute;
     height: 142%;
-    width: 100%;
+    width: 92%;
     bottom: 2.6%;
     display: flex;
     align-items: center;
