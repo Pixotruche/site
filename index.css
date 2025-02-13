@@ -620,6 +620,7 @@ font-family: "typo2";
       }
 
     .order1 {
+        line-height: 120%;
         display: block;
         position: absolute;
         bottom: -97vh;
@@ -633,10 +634,13 @@ font-family: "typo2";
         z-index: 11 ;
         transition: bottom 0.7s;
     }
-    .order1appear{bottom: 2.3vh;}
+    .order1appear{bottom: 3vh;}
 
-    /* .shopcontainer:hover + .order1 {  opacity: 1;  } */
-    /* .order1:hover {  opacity: 1;  } */
+    .order2link
+    {
+        color: var(--text2-color);
+        text-decoration: underline;
+    } 
 
     .order2{display: none;}
 
@@ -769,11 +773,13 @@ font-family: "typo2";
         transform: translatex(-50%);
         font-size: 4vw;
         margin-bottom: 10vw;
-    } 
-    .order2text
-    {
         font-family: "typo1";
         font-size: 4vw;
+    } 
+    .order2link
+    {
+        color: var(--text2-color);
+        text-decoration: underline;
     } 
 }
 
