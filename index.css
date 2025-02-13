@@ -771,10 +771,9 @@ font-family: "typo2";
         position: relative;
         left: 50%;
         transform: translatex(-50%);
-        font-size: 4vw;
+        font-size: 4.5vw;
         margin-bottom: 10vw;
         font-family: "typo1";
-        font-size: 4vw;
     } 
     .order2link
     {
