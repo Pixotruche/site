@@ -585,6 +585,10 @@ font-family: "typo2";
     font-family: "typo1";
     font-size: 2.4vh;
 }
+.sold{
+    color: rgb(199, 0, 0);
+    font-family: "typo1";
+}
 #info2{
     top: 16.5vh;
     justify-content: space-between;
