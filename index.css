@@ -70,7 +70,7 @@
 
 /* -_-_-_-_-_-_-_-_-_-_-_-_-_-TOP*/
         
-        p{
+        p, label{
             font-size: 2.2vh;
         }
         #titre{
@@ -454,8 +454,6 @@ font-family: "typo2";
 /* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-SHOP-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 /* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */
 
-
-
 .upbijoux{
     top: 0%;
     transition: 0.7s;
@@ -498,9 +496,30 @@ font-family: "typo2";
 
 
 .espacetop{
-    grid-column: 1 / 3;
-    grid-row: 1 / 1;
     height: 0vh;
+  }
+
+.filters_box{
+    margin-left: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    gap: 3vh;
+  }
+
+  .checkbox-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em; /* optionnel pour espacer */
+}
+
+  input[type="checkbox"] {
+  accent-color: var( --text2-color);
+}
+  label{
+       font-family: "typo1";
   }
 
   .upshop{
@@ -509,9 +528,10 @@ font-family: "typo2";
   }
 
 /* carousel */
-.carousel-containder{
+.carousel-container{
     display: flex;
     position: relative;
+    left: -5vh;
     overflow: visible;
     justify-content: center;
     align-items: center;
@@ -660,6 +680,9 @@ font-family: "typo2";
   @media (max-width: 600px) {
 
 
+    .price, .number, .size , .materiaux, .type, label {  font-size: 4.5vw; }
+
+
     .shopcontainer {
         overflow-x: hidden;
         overflow-y: scroll;
@@ -671,7 +694,6 @@ font-family: "typo2";
     .scrollshop
 {  height: 100vh;
     width: 100vw;
-
     display: flex;
     flex-direction: column;
     row-gap: 0vw;
@@ -681,6 +703,9 @@ font-family: "typo2";
   }
   .espacetop{
     display: none;
+  }
+  .carousel-container{
+    left: 0vh;
   }
 
     .carousel {
@@ -719,11 +744,15 @@ font-family: "typo2";
     .carousel-arrow {
         display: none;
       }
-      /* .carousel-indicators {
-          opacity: 0;
-          display: none;
-        } */
 
+        /* filter */
+
+        .filters_box{
+            margin-left: 0vh;
+            position: relative;
+            flex-direction: row;
+            margin-bottom: 10vw;
+        }
 
         .info {
         
@@ -761,14 +790,8 @@ font-family: "typo2";
  
           }
 
-
-    .price, .number, .size , .materiaux, .type {  font-size: 4.5vw; }
-
- 
-
     .order1{display: none;}
     .order2 {
-        margin-top: 27vw;
         display: block;
         word-wrap: unset;
         max-width: 80%;
@@ -778,6 +801,7 @@ font-family: "typo2";
         transform: translatex(-50%);
         font-size: 4.5vw;
         margin-bottom: 10vw;
+         margin-top: 30vw;
         font-family: "typo1";
     } 
     .order2link
