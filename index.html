@@ -107,11 +107,11 @@ mathieu.champion<span class="un">1</span>8@gmail.com<br>
 
      <!--choice_-_-_-_-_-_-_-_-_-_-_-_- -->
 <div class="top2">
-  <a class="categorie projects"  onclick="projectsclick()" ><p >projects</p></a>
+  <a class="categorie projects"  onclick="projectsclick()" ><p>projects</p></a>
   <p class="categorie" >/</p>
-  <a class="categorie bijoux" onclick="bijouxclick()"><p >jewellery</p></a>
+  <a class="categorie bijoux" onclick="bijouxclick()"><p>jewellery</p></a>
   <p class="categorie" >/</p>
-  <a class="categorie shop" onclick="shopclick()"><p >shop</p></a>
+  <a class="categorie shop" onclick="shopclick()"><p>shop</p></a>
 </div>
 
       <!--project-_-_-_-_-_-_-_-_-_-_-_- -->
@@ -220,7 +220,11 @@ mathieu.champion<span class="un">1</span>8@gmail.com<br>
               </div>
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="filter4" name="filter4" checked/>
-                <label for="filter4">bracelet</label>
+                <label for="filter4">bracelets</label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="filter5" name="filter5" checked/>
+                <label for="filter5">earrings</label>
               </div>
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="filter2" name="filter2" checked/>
@@ -712,7 +716,43 @@ mathieu.champion<span class="un">1</span>8@gmail.com<br>
       </div>
 
 
-
+      <div class="carousel-container item hidden earring">
+        <button class="carousel-arrow left" data-carousel-id="31">←</button>
+        <div class="carousel" id="carousel-31">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="video/31/31.jpg" ></div>
+            <div class="carousel-slide">
+              <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  
+                <source src="video/31/31-1.mp4" type="video/mp4">
+                <p>votre navigateur ne supporte pas cette vidéo.</p>
+            </video>
+          </div>
+                      <div class="carousel-slide">
+              <video class="video" id="myVideo" muted loop playsinline webkit-playsinline preload="none">  
+                <source src="video/31/31-2.mp4" type="video/mp4">
+                <p>votre navigateur ne supporte pas cette vidéo.</p>
+            </video>
+          </div>
+            <div class="carousel-slide"><img src="video/31/31-4.jpg" ></div>
+          </div>
+        </div>
+        <button class="carousel-arrow right" data-carousel-id="31">→</button>
+        <div class="info" id="info2">
+          <p class="type">earrings</p>
+          <p class="materiaux">925 silver</p>
+        </div>
+        <div class="info">
+          <p class="number">n 31</p>
+          <div class="carousel-indicators">
+            <div class="carousel-indicator active" data-index="0"></div>
+            <div class="carousel-indicator" data-index="1"></div>
+            <div class="carousel-indicator" data-index="2"></div>
+            <div class="carousel-indicator" data-index="3"></div>
+          </div>
+          <p class="size"></p>
+          <p class="price">45 euros / piece</p>
+        </div>
+      </div>
 
 
 
@@ -1636,12 +1676,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         document.addEventListener("DOMContentLoaded", function () {
-  const filters = ["filter1", "filter2", "filter3", "filter4"];
+  const filters = ["filter1", "filter2", "filter3", "filter4", "filter5"];
   const classMap = {
     filter1: "bague",
     filter2: "accessoire",
     filter3: "collier",
-    filter4: "bracelet"
+    filter4: "bracelet",
+    filter5: "earring"
   };
 
   filters.forEach((filterId) => {

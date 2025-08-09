@@ -752,7 +752,10 @@ font-family: "typo2";
             position: relative;
             flex-direction: row;
             margin-bottom: 10vw;
+              flex-wrap: wrap;
         }
+
+
 
         .info {
         
