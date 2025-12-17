@@ -473,7 +473,6 @@ font-family: "typo2";
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;  
     /* POUR LANCIEN INVERSION DE SCROLL */
-    /* background-color: var(--main-color); */
   }
 
   .shopcontainer::-webkit-scrollbar {
@@ -541,6 +540,7 @@ font-family: "typo2";
     width: 45vh;
     height: 55vh;
     overflow: hidden;
+        /* outline: #1100ff solid 2px; */
   }
   .carousel-track {
   transition: transform 0.3s ease-in-out;
