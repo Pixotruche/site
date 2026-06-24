@@ -499,13 +499,16 @@ font-family: "typo2";
   }
 
 .filters_box{
-    margin-left: 15vh;
+    /* margin-left: 15vh;
+    position: relative; */
+    margin-left: 4vh;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     height: 100vh;
     gap: 3vh;
+    z-index: 1000;
   }
 
   .checkbox-wrapper {
@@ -530,7 +533,8 @@ font-family: "typo2";
 .carousel-container{
     display: flex;
     position: relative;
-    left: -5vh;
+     /* left: -5vh; */
+    left: 27vh;
     overflow: visible;
     justify-content: center;
     align-items: center;
